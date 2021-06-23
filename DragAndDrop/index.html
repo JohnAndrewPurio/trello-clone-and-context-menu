@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag And Drop</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="root">
+        <div class="container todo" ondrop="drop(event)">
+            <h3>ToDo</h3>
+            <ul>
+                <li class="card" draggable="true" ondragstart="drag(event)" data-id="Grocery Shopping">Grocery Shopping</li>
+                <li class="card" draggable="true" ondragstart="drag(event)" data-id="React Test">React Test</li>
+            </ul>
+        </div>
+
+        <div class="container doing" ondrop="drop(event)">
+            <h3>Doing</h3>
+            <ul>
+                <li class="card" draggable="true" ondragstart="drag(event)" data-id="Trello Clone">Trello Clone</li>
+                <li class="card" draggable="true" ondragstart="drag(event)" data-id="Attend Lecture">Attend Lecture</li>
+            </ul>
+        </div>
+
+        <div class="container done" ondrop="drop(event)">
+            <h3>Done</h3>
+            <ul>
+                <li class="card" draggable="true" ondragstart="drag(event)" data-id="Help Others">Help Others</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

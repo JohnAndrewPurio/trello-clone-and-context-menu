@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --x-coord: 0;
+    --y-coord: 0;
+}
+
+.root {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.context-menu {
+    padding: 10vmin;
+    border: 0.5vmin solid black;
+    border-radius: 1vmin;
+    position: relative;
+}
+
+.hidden-menu {
+    position: absolute;
+    flex-direction: column;
+    border: 0.25vmin solid black;
+    display: none;
+    top:  var(--y-coord);
+    left: var(--x-coord);
+    background-color: white;
+    width: 15vmin;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0.5vmin;
+    cursor: pointer;
+}
+
+.shown {
+    display: flex;
+}
